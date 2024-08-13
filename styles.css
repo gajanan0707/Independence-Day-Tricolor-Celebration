@@ -1,0 +1,105 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #002D62;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Waving Flag Animation */
+.flag-container {
+    margin: 50px auto;
+}
+
+.waving-flag {
+    width: 300px;
+    animation: wave 4s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Ashoka Chakra */
+.ashoka-chakra {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: url('assets/ashoka-chakra.png') no-repeat center/contain;
+    animation: spin 10s linear infinite, glow 2s infinite alternate;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #fff; }
+    to { box-shadow: 0 0 20px #00FF00; }
+}
+
+/* Patriotic Message */
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #FF9933;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #138808;
+}
+
+/* Fireworks Display */
+.fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/fireworks.gif') no-repeat center/cover;
+    pointer-events: none;
+    animation: burst 5s infinite;
+}
+
+@keyframes burst {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* Confetti Effect */
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/confetti.gif') repeat center/cover;
+    pointer-events: none;
+    animation: fall 10s infinite;
+}
+
+@keyframes fall {
+    0% { top: -100%; }
+    100% { top: 100%; }
+}
+
+/* Starry Background */
+.stars-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/stars.gif') repeat center/cover;
+    pointer-events: none;
+    opacity: 0.2;
+}
